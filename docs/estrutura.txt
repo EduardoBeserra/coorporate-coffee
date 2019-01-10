@@ -1,0 +1,33 @@
+pessoa
+    - nome
+    - email
+projeto
+    - nome
+projeto/pessoa
+    - pessoa (fk)
+    - projeto (fk)
+previsao
+    - projeto (fk)
+    - periodo
+    - valor
+debito
+    - pessoa (fk)
+    - previsao (fk)
+    - valor
+    - dataVencimento
+credito
+    - pessoa (fk)
+    - previsao (fk)
+    - valor
+pagamento
+    - debito (fk)
+    - pessoa (fk)
+    - data
+    - valor
+    - observacao
+despesa
+    - previsao (fk)
+    - descricao
+    - valorUnitario
+    - quantidade
+    - valorTotal
